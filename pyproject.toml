@@ -1,6 +1,6 @@
 [project]
 name = "cortex-xdr-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Curated MCP servers for Palo Alto Cortex XDR"
 readme = "README.md"
 requires-python = ">=3.12"
