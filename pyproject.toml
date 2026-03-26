@@ -1,0 +1,26 @@
+[project]
+name = "cortex-xdr-mcp"
+version = "0.1.0"
+description = "Curated MCP servers for Palo Alto Cortex XDR"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = []
+dependencies = []
+
+[project.scripts]
+cortex-xdr-investigate = "cortex_xdr_mcp.__main__:investigate_entry"
+cortex-xdr-respond = "cortex_xdr_mcp.__main__:respond_entry"
+cortex-xdr-engineer = "cortex_xdr_mcp.__main__:engineer_entry"
+cortex-xdr-admin = "cortex_xdr_mcp.__main__:admin_entry"
+cortex-xdr-verify-live = "cortex_xdr_mcp.verify_live:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
