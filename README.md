@@ -1,5 +1,7 @@
 # Cortex-XDR-MCP
 
+> **Unofficial** -- this project is not affiliated with or endorsed by Palo Alto Networks.
+
 Curated MCP servers for Palo Alto Cortex XDR.
 
 This repo intentionally does **not** convert the full Cortex XDR REST/OpenAPI surface into MCP tools. Instead, it exposes a smaller set of workflow-oriented tools split into four servers:
@@ -206,3 +208,7 @@ If you add or change a tool, update both the tool-specific unit tests and the co
 - The optional admin server exists, but it should not be attached by default in low-trust agent setups.
 - The client supports both standard and advanced Cortex XDR API authentication modes.
 - Some Cortex XDR endpoints are still tenant- or feature-gated even when they exist in the spec; `verify-live` helps separate code issues from tenant capability issues.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
